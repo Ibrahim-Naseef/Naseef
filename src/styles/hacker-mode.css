@@ -1,0 +1,99 @@
+/* Hacker Mode — activated via the terminal's "sudo su" command.
+   Applies a red, glitchy, "system compromised" look across the ENTIRE
+   site (not just the terminal window), by toggling a class on <html>. */
+
+html.hacker-mode {
+  --primary-orange: #ff2b2b;
+  animation: hackerGlitchShake 0.2s infinite;
+}
+
+html.hacker-mode body {
+  background: #050505 !important;
+  color: #ff3b3b !important;
+  filter: contrast(1.15) saturate(1.4);
+  transition: background 0.15s ease;
+}
+
+html.hacker-mode * {
+  border-color: rgba(255, 43, 43, 0.25) !important;
+}
+
+html.hacker-mode a,
+html.hacker-mode h1,
+html.hacker-mode h2,
+html.hacker-mode h3,
+html.hacker-mode h4,
+html.hacker-mode p,
+html.hacker-mode span,
+html.hacker-mode li,
+html.hacker-mode button {
+  color: #ff3b3b !important;
+  text-shadow: 0 0 6px rgba(255, 0, 40, 0.55);
+}
+
+html.hacker-mode img,
+html.hacker-mode video {
+  filter: grayscale(1) sepia(1) hue-rotate(-50deg) saturate(6) brightness(0.65)
+    contrast(1.3) !important;
+}
+
+/* CRT scanline overlay across the whole viewport */
+html.hacker-mode body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999998;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 0, 40, 0.07) 0px,
+    rgba(255, 0, 40, 0.07) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  mix-blend-mode: overlay;
+  animation: hackerFlicker 6s infinite;
+}
+
+/* "SYSTEM COMPROMISED" banner */
+html.hacker-mode body::after {
+  content: "SYSTEM COMPROMISED — ROOT ACCESS GRANTED";
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 999999;
+  color: #ff3b3b;
+  font-family: "Courier New", monospace;
+  letter-spacing: 3px;
+  font-size: 11px;
+  opacity: 0.85;
+  animation: hackerBlink 1.3s steps(2) infinite;
+  white-space: nowrap;
+}
+
+@keyframes hackerFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.4; }
+}
+
+@keyframes hackerBlink {
+  50% { opacity: 0.15; }
+}
+
+@keyframes hackerGlitchShake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(1px, 1px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.hacker-mode,
+  html.hacker-mode body::before,
+  html.hacker-mode body::after {
+    animation: none !important;
+  }
+}
