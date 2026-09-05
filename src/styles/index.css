@@ -3344,4 +3344,38 @@ img {
     .terminal-panel .xterm-container {
         padding: 4px
     }
+
+    .find-my-work .work-content.certifications-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px);
+        padding: 24px 0;
+        box-sizing: border-box
+    }
+
+    .find-my-work .certifications-grid .card-modal-component,
+    .find-my-work .certifications-grid .card-modal-component:nth-child(4),
+    .find-my-work .certifications-grid .card-modal-component:nth-child(5) {
+        grid-column: auto;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box
+    }
+
+    .find-my-work .certifications-grid .card-modal-component .main-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box
+    }
+
+    .find-my-work .certifications-grid .card-modal-component .card-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1
+    }
 }
