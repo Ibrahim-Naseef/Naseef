@@ -2558,6 +2558,25 @@ img {
     max-width: 1180px
 }
 
+.find-my-work .work-content.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    max-width: 1180px
+}
+
+.find-my-work .cards-grid .card-modal-component .main-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.find-my-work .cards-grid .card-modal-component .card-img {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box
+}
+
 .find-my-work .certifications-grid .card-modal-component {
     grid-column: span 2
 }
@@ -3262,6 +3281,10 @@ img {
         grid-template-columns: 1fr;
         width: min(100%, 420px)
     }
+    .find-my-work .work-content.cards-grid {
+        grid-template-columns: 1fr;
+        width: min(100%, 420px)
+    }
     .find-my-work .certifications-grid .card-modal-component:nth-child(4),
     .find-my-work .certifications-grid .card-modal-component:nth-child(5) {
         grid-column: auto
@@ -3289,5 +3312,36 @@ img {
     }
     .terminal-modal-content {
         max-width: 100%
+    }
+}
+
+@media screen and (max-width:600px) {
+    .navbar .heading {
+        max-width: 118px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px
+    }
+
+    .terminal-panel {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+        overflow: hidden
+    }
+
+    .terminal-panel .terminal-window {
+        width: 100%;
+        max-width: 100%;
+        margin: 8px 0;
+        border-radius: 8px
+    }
+
+    .terminal-panel .terminal-body {
+        height: 300px
+    }
+
+    .terminal-panel .xterm-container {
+        padding: 4px
     }
 }

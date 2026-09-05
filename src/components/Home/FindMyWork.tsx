@@ -41,7 +41,7 @@ function FindMyWork() {
         </Suspense>
       ) : (
         <div
-          className={`work-content ${activeTab === 1 ? "certifications-grid" : ""}`}
+          className={`work-content ${activeTab === 0 || activeTab === 2 ? "cards-grid" : ""} ${activeTab === 1 ? "certifications-grid" : ""}`}
           id="work-content-scroll-div"
         >
           {(activeTab === 2 ? work[3] : work[activeTab])?.map((data, i) => (
