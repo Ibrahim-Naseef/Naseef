@@ -1,6 +1,9 @@
 // Tab 0: Projects — from resume "Projects" section
 import project3Tier from "../assets/work-tab/projects/project-3tier.jpg";
 import projectExpenseTracker from "../assets/work-tab/projects/project-expense-tracker.jpg";
+import educationBe from "../assets/work-tab/education/edu-be.jpg";
+import educationPuc from "../assets/work-tab/education/edu-puc.jpg";
+import educationSslc from "../assets/work-tab/education/edu-sslc.jpg";
 
 // Tab 1: Certifications — from resume "Certifications" section
 import certAwsDevopsPro from "../assets/work-tab/certifications/cert-aws-devops-pro.jpg";
@@ -128,6 +131,7 @@ export const work = [
     {
       cardData: {
         title: "B.E (Computer Science)",
+        imgUrl: educationBe,
         details: ["Yenepoya Institute of Technology", "2020 - 2024", "9 CGPA"],
         url: null,
       },
@@ -141,6 +145,7 @@ export const work = [
     {
       cardData: {
         title: "PUC / +2",
+        imgUrl: educationPuc,
         details: ["St Sebastian PU College", "2018 - 2020", "95%"],
         url: null,
       },
@@ -154,6 +159,7 @@ export const work = [
     {
       cardData: {
         title: "SSLC",
+        imgUrl: educationSslc,
         details: ["H.S.M.E.M School", "2006 - 2018", "88.32%"],
         url: null,
       },
