@@ -1,9 +1,12 @@
 // Tab 0: Projects — from resume "Projects" section
-import project3Tier from "../assets/work-tab/projects/project-3tier.jpg";
-import projectExpenseTracker from "../assets/work-tab/projects/project-expense-tracker.jpg";
-import educationBe from "../assets/work-tab/education/edu-be.jpg";
-import educationPuc from "../assets/work-tab/education/edu-puc.jpg";
-import educationSslc from "../assets/work-tab/education/edu-sslc.jpg";
+import project3Tier from "../assets/work-tab/projects/Docker-3-tier-app.png";
+import projectExpenseTracker from "../assets/work-tab/projects/Expense-tracker-docker.png";
+import projectDentalAnalysis from "../assets/work-tab/projects/Morphological-dental-image.jpeg";
+import projectCodeSeek from "../assets/work-tab/projects/Python-code-seeker.jpeg";
+import projectVehicleDetection from "../assets/work-tab/projects/vehicle-number-plate-detection.png";
+import educationBe from "../assets/work-tab/education/BE-yenepoya.png";
+import educationPuc from "../assets/work-tab/education/PUC.png";
+import educationSslc from "../assets/work-tab/education/SSLC.png";
 
 // Tab 1: Certifications — from resume "Certifications" section
 import certAwsDevopsPro from "../assets/work-tab/certifications/cert-aws-devops-pro.jpg";
@@ -47,6 +50,54 @@ export const work = [
         desc: "Containerized a full-stack financial tracking application using multi-stage Dockerfiles to optimize image sizes and reduce deployment overhead. Orchestrated multi-container lifecycle and service dependencies via Docker Compose, creating an automated, reproducible environment for rapid local testing.",
         infoHeading: "Technologies Used",
         infoArr: ["Docker", "Docker Compose", "Multi-stage Builds"],
+      },
+    },
+    {
+      cardData: {
+        title: "Morphological Analysis of Dental X-Ray Images",
+        imgUrl: projectDentalAnalysis,
+        url: {
+          githubUrl:
+            "https://github.com/Ibrahim-Naseef/Morphological-Analysis-of-Dental-X-Ray-Images-Using-Deep-Learning",
+        },
+      },
+      modalData: {
+        title: "Morphological Analysis of Dental X-Ray Images",
+        desc: "A deep-learning system using YOLOv8 tooth detection and instance segmentation to analyze dental X-ray images and extract morphological features. The project is under patent process, so its code, dataset, and model files are not publicly shared.",
+        infoHeading: "Technologies Used",
+        infoArr: ["YOLOv8", "Python", "Django", "MySQL", "Roboflow"],
+      },
+    },
+    {
+      cardData: {
+        title: "CodeSeek: Python Error Explorer",
+        imgUrl: projectCodeSeek,
+        url: {
+          githubUrl:
+            "https://github.com/Ibrahim-Naseef/CodeSeek-Python-Error-Explorer",
+        },
+      },
+      modalData: {
+        title: "CodeSeek: Python Error Explorer",
+        desc: "A Streamlit debugging tool that executes uploaded Python files, captures errors, detects input prompts, and retrieves relevant Stack Overflow solutions through the Stack Exchange API.",
+        infoHeading: "Technologies Used",
+        infoArr: ["Python", "Streamlit", "Requests", "Subprocess", "Stack Exchange API"],
+      },
+    },
+    {
+      cardData: {
+        title: "Vehicle Number Plate Detection",
+        imgUrl: projectVehicleDetection,
+        url: {
+          githubUrl:
+            "https://github.com/Ibrahim-Naseef/Vehicle-NumberPlate-Detection-YOLOV8",
+        },
+      },
+      modalData: {
+        title: "Vehicle Number Plate Detection",
+        desc: "A YOLOv8-based vehicle number-plate detection system with a Streamlit interface for uploading images and running trained-model predictions.",
+        infoHeading: "Technologies Used",
+        infoArr: ["YOLOv8", "Python", "Streamlit", "OpenCV", "NumPy", "Ultralytics"],
       },
     },
   ],
