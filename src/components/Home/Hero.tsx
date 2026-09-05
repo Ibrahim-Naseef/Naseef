@@ -153,7 +153,7 @@ function Hero() {
             iconPosition="right"
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/Ibrahim_Naseef_Resume.pdf';
+              link.href = `${window.location.origin}/Ibrahim_Naseef_Resume.pdf`;
               link.download = 'Ibrahim_Naseef_Resume.pdf';
               document.body.appendChild(link);
               link.click();
