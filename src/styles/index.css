@@ -2479,7 +2479,10 @@ img {
         border-radius: 20px;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none
+        scrollbar-width: none;
+        box-sizing: border-box;
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px)
     }
     .tabs::-webkit-scrollbar {
         display: none
@@ -2491,6 +2494,24 @@ img {
         font-size: 13px;
         white-space: nowrap;
         flex-shrink: 0
+    }
+    .find-my-work .work-content {
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px);
+        box-sizing: border-box
+    }
+    .card-modal-component,
+    .card-modal-component .main-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box
+    }
+    .card-modal-component .main-card .card-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1
     }
     [data-theme=dark] .tabs {
         background-color: var(--white);
@@ -2532,9 +2553,21 @@ img {
 
 .find-my-work .work-content.certifications-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     align-items: start;
     max-width: 1180px
+}
+
+.find-my-work .certifications-grid .card-modal-component {
+    grid-column: span 2
+}
+
+.find-my-work .certifications-grid .card-modal-component:nth-child(4) {
+    grid-column: 2 / span 2
+}
+
+.find-my-work .certifications-grid .card-modal-component:nth-child(5) {
+    grid-column: 4 / span 2
 }
 
 .find-my-work .work-content.education-grid {
@@ -3229,9 +3262,26 @@ img {
         grid-template-columns: 1fr;
         width: min(100%, 420px)
     }
+    .find-my-work .certifications-grid .card-modal-component:nth-child(4),
+    .find-my-work .certifications-grid .card-modal-component:nth-child(5) {
+        grid-column: auto
+    }
     .find-my-work .work-content.education-grid {
         grid-template-columns: 1fr;
         width: min(100%, 420px)
+    }
+    .find-my-work .work-content,
+    .find-my-work .card-modal-component,
+    .find-my-work .card-modal-component .main-card {
+        min-width: 0;
+        max-width: calc(100vw - 24px);
+        box-sizing: border-box
+    }
+    .find-my-work .card-modal-component .main-card .card-img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1
     }
     .terminal-modal-overlay {
         padding: 48px 12px 12px;

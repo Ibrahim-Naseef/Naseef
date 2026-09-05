@@ -109,7 +109,7 @@ function Hero() {
               color: 'var(--primary-orange)',
             }}
             texts={roles}
-            speed={10}
+            speed={70}
             pauseDuration={2000}
           />
         </motion.div>

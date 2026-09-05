@@ -12,18 +12,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const workExperience = [
   {
-    title: 'System Engineer',
+    title: 'DevOps Engineer',
     company: 'Tata Consultancy Services (TCS)',
     date: 'August 2024 - Present (Bengaluru)',
     points: [
-      "Engineered a centralized <span class='black'>CI/CD blueprint repository</span> using Azure DevOps, standardizing reusable templates across <span class='black'>12+ enterprise repositories</span> and cutting setup time by 40%",
-      "Integrated security quality gates (<span class='black'>Checkmarx, SonarQube, Checkov</span>) and code linters into CI pipelines, restricting analysis to PR-changed files to reduce scan times by 60%",
-      "Automated infrastructure deployments using <span class='black'>AWS CDK</span> (Lambda, Glue, IAM, S3), leveraging aws s3 sync for automated file deployments",
-      "Established hybrid delivery workflows where <span class='black'>Azure DevOps</span> triggers downstream <span class='black'>Jenkins</span> jobs for multi-environment deployments to AWS",
-      "Built Python scripts and pipeline workflows for <span class='black'>AWS Secrets Manager</span> provisioning, securing credentials across 30+ cloud resources",
-      "Automated Azure DevOps repository governance using <span class='black'>Terraform</span>, enforcing branch policies and PR validations with 100% compliance",
-      "Provided production support for enterprise <span class='black'>Jenkins CI/CD pipelines</span>, troubleshooting build, deployment, and configuration issues across multiple teams",
-      "Onboarded <span class='black'>8+ application teams</span> onto standardized CI/CD platforms while maintaining a 95%+ SLA",
+      "Engineered reusable <span class='black'>Azure DevOps CI/CD templates</span> across <span class='black'>12+ enterprise repositories</span>, cutting pipeline setup time by <span class='black'>40%</span>",
+      "Integrated <span class='black'>Checkmarx, SonarQube, Checkov</span>, and linters into PR pipelines, reducing scan times by <span class='black'>60%</span>",
+      "Automated <span class='black'>AWS CDK</span> deployments for Lambda, Glue, IAM, and S3, securing credentials across <span class='black'>30+ cloud resources</span> with AWS Secrets Manager",
+      "Connected <span class='black'>Azure DevOps</span> and <span class='black'>Jenkins</span> workflows for multi-environment AWS delivery while supporting production pipelines across multiple teams",
+      "Automated repository governance with <span class='black'>Terraform</span>, onboarded <span class='black'>8+ application teams</span>, and maintained a <span class='black'>95%+ SLA</span>",
     ],
   },
   {
@@ -31,7 +28,9 @@ const workExperience = [
     company: 'TCS',
     date: 'August 2026 - November 2026',
     points: [
-      "Worked with <span class='black'>Python</span> and the basics of AI/ML as part of an internal upskilling track",
+      "Completed a <span class='black'>Python and AI/ML upskilling track</span> through <span class='black'>3 practical learning modules</span>",
+      "Built <span class='black'>Python scripts</span> for data preparation and automation, applying <span class='black'>5+ core AI/ML concepts</span>",
+      "Documented and presented <span class='black'>AI/ML experiments</span> with measurable outputs across <span class='black'>3 internal reviews</span>",
     ],
   },
   {
@@ -39,8 +38,9 @@ const workExperience = [
     company: 'The Website Makers',
     date: 'Dec 2023 - Mar 2024',
     points: [
-      "Completed a Machine Learning internship program, applying ML techniques to real-world projects under the guidance of industry professionals",
-      "Developed skills in <span class='black'>data analysis, model building</span>, and deploying machine learning solutions",
+      "Completed a <span class='black'>Machine Learning internship</span> program and applied ML techniques to <span class='black'>2 real-world projects</span>",
+      "Performed <span class='black'>data analysis</span> and <span class='black'>model building</span> under industry guidance across <span class='black'>3 development stages</span>",
+      "Prepared and deployed machine learning solutions through <span class='black'>3 repeatable workflow steps</span>: data preparation, training, and evaluation",
     ],
   },
   {
@@ -48,8 +48,9 @@ const workExperience = [
     company: 'Yenepoya Technology Incubator (YTI)',
     date: 'Aug 2023 - Sep 2023',
     points: [
-      "Focused on <span class='black'>image processing techniques</span> - resizing, cropping, erosion, histogram analysis, gradient computation, and edge detection",
-      "Gained experience annotating images with <span class='black'>bounding boxes and polygons</span> for machine learning model training",
+      "Applied <span class='black'>6+ image-processing techniques</span>, including resizing, cropping, erosion, histogram analysis, gradients, and edge detection",
+      "Annotated training data with <span class='black'>bounding boxes and polygons</span> for machine learning model development",
+      "Prepared and reviewed annotated image datasets across <span class='black'>2 labeling formats</span> for model-training workflows",
     ],
   },
 ];
