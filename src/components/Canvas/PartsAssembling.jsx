@@ -1,9 +1,10 @@
+import partsModelUrl from "../../../assets/3d/parts-assembling.glb";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { useEffect } from "react";
 
 export function PartsAssembling({ setAnimationActions, groupRef,...props }) {
   // const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/assets/3d/parts-assembling.glb");
+  const { nodes, materials, animations } = useGLTF(partsModelUrl);
   const { actions } = useAnimations(animations, groupRef);
 
   useEffect(() => {
@@ -244,3 +245,4 @@ export function PartsAssembling({ setAnimationActions, groupRef,...props }) {
 }
 
 useGLTF.preload('/assets/3d/parts-assembling.glb')
+useGLTF.preload(partsModelUrl)

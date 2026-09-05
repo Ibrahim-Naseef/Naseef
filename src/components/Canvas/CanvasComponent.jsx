@@ -3,9 +3,10 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import { useInputSourceStore } from "../../store/inputSourceStore";
 import { useThemeStore } from "../../store/themeStore";
+import robotModelUrl from "../../../assets/3d/cute_robot.glb";
 
 function Model({ onReady, ...props }) {
-  const { nodes, materials } = useGLTF("/assets/3d/cute_robot.glb");
+  const { nodes, materials } = useGLTF(robotModelUrl);
   const group = useRef();
 
   useEffect(() => {
@@ -60,6 +61,7 @@ function Model({ onReady, ...props }) {
 }
 
 useGLTF.preload("/assets/3d/cute_robot.glb");
+useGLTF.preload(robotModelUrl);
 
 export default function CanvasComponent({ onReady }) {
   const { darkMode } = useThemeStore();

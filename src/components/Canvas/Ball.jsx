@@ -3,6 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { useInputSourceStore } from "../../store/inputSourceStore";
+import ballModelUrl from "../../../assets/3d/ball.glb";
 
 const ROTATION_RANGE = 2.5;
 const GRIP_TWIST_SCALE = 3.5;
@@ -12,7 +13,7 @@ const DEFAULT_ROLL_SPEED = 0.75;
 
 export function Ball(props) {
    const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/assets/3d/ball.glb");
+  const { nodes, materials, animations } = useGLTF(ballModelUrl);
   const { actions } = useAnimations(animations, group);
   const targetRotationRef = useRef({ x: 0, y: 0 });
   const rollingActionRef = useRef(null);
@@ -551,3 +552,4 @@ export function Ball(props) {
 }
 
 useGLTF.preload("/assets/3d/ball.glb");
+useGLTF.preload(ballModelUrl);
