@@ -4,9 +4,9 @@ import projectExpenseTracker from "../assets/work-tab/projects/Expense-tracker-d
 import projectDentalAnalysis from "../assets/work-tab/projects/Morphological-dental-image.jpeg";
 import projectCodeSeek from "../assets/work-tab/projects/Python-code-seeker.jpeg";
 import projectVehicleDetection from "../assets/work-tab/projects/vehicle-number-plate-detection.png";
-import educationBe from "../assets/work-tab/education/BE-yenepoya.png";
-import educationPuc from "../assets/work-tab/education/PUC.png";
-import educationSslc from "../assets/work-tab/education/SSLC.png";
+import educationBe from "../assets/work-tab/education/education_1_be_cse_3d.png";
+import educationPuc from "../assets/work-tab/education/education_2_puc_3d.png";
+import educationSslc from "../assets/work-tab/education/education_3_sslc_3d.png";
 
 // Tab 1: Certifications — from resume "Certifications" section
 import certAwsDevopsPro from "../assets/work-tab/certifications/cert-aws-devops-pro.jpg";
