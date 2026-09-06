@@ -1,0 +1,63 @@
+# Ibrahim Naseef
+
+> DevOps Engineer | Cloud Developer | AI/ML Developer
+
+Ibrahim Naseef is a DevOps Engineer with 2 years of experience at Tata Consultancy Services (TCS). He specializes in CI/CD pipelines, multicloud infrastructure automation, DevSecOps, cloud architecture, and developer workflows.
+
+## Experience
+
+### System Engineer, Tata Consultancy Services (TCS)
+*August 2024 – Present, Bengaluru*
+
+- Built centralized Azure DevOps CI/CD templates for 12+ repositories.
+- Integrated Checkmarx, SonarQube, Checkov, and linting quality gates.
+- Automated AWS infrastructure deployments with AWS CDK, Lambda, Glue, IAM, and S3.
+- Connected Azure DevOps and Jenkins workflows for multi-environment AWS deployments.
+- Automated AWS Secrets Manager provisioning with Python.
+- Managed Azure DevOps repository governance with Terraform.
+
+## Skills
+
+Azure DevOps, Jenkins, Git, GitHub, CI/CD, AWS, Azure, Terraform, AWS CDK, Docker, Docker Compose, Kubernetes, Ansible, Python, Bash, MySQL, SonarQube, Checkmarx, Checkov, AI/ML, Agentic AI, LLM tools, ChatGPT, Claude, Vercel, Netlify.
+
+## Projects
+
+### Multi-Container 3-Tier Web Application
+Docker and Docker Compose architecture with isolated frontend, backend, and database services.
+[github.com/Ibrahim-Naseef/Docker-3-Tier-App](https://github.com/Ibrahim-Naseef/Docker-3-Tier-App)
+
+### Full-Stack Expense Tracker Application
+Containerized full-stack application using multi-stage Docker builds and Docker Compose.
+[github.com/Ibrahim-Naseef/Expense-Tracker-App-Docker](https://github.com/Ibrahim-Naseef/Expense-Tracker-App-Docker)
+
+### Morphological Analysis of Dental X-Ray Images
+Deep-learning system using YOLOv8 tooth detection and instance segmentation to extract morphological features from dental X-ray images. Under patent process — code, dataset, and model files are not publicly shared.
+Technologies: YOLOv8, Python, Django, MySQL, Roboflow
+
+### CodeSeek: Python Error Explorer
+Streamlit debugging tool that executes uploaded Python files, captures errors, detects input prompts, and retrieves relevant Stack Overflow solutions via the Stack Exchange API.
+[github.com/Ibrahim-Naseef/CodeSeek-Python-Error-Explorer](https://github.com/Ibrahim-Naseef/CodeSeek-Python-Error-Explorer)
+
+### Vehicle Number Plate Detection
+YOLOv8-based vehicle number-plate detection system with a Streamlit interface for uploading images and running trained-model predictions.
+[github.com/Ibrahim-Naseef/Vehicle-NumberPlate-Detection-YOLOV8](https://github.com/Ibrahim-Naseef/Vehicle-NumberPlate-Detection-YOLOV8)
+
+## Certifications
+
+- AWS Certified DevOps Engineer – Professional
+- AWS Certified Solutions Architect – Associate
+- Microsoft Certified: Azure Developer Associate (AZ-204)
+- Microsoft Certified: Azure Fundamentals (AZ-900)
+- GitHub Certified: Agentic AI Developer
+
+## Education
+
+- **B.E in Computer Science** — Yenepoya Institute of Technology, 2020–2024, 9 CGPA
+- **PUC / +2** — St Sebastian PU College, 2018–2020, 95%
+- **SSLC** — H.S.M.E.M School, 2006–2018, 88.32%
+
+## Links
+
+- LinkedIn: [linkedin.com/in/ibrahim-naseef](https://linkedin.com/in/ibrahim-naseef)
+- GitHub: [github.com/ibrahim-naseef](https://github.com/ibrahim-naseef)
+- Email: Ibrahimnaseef19@gmail.com
