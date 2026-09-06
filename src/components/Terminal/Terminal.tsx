@@ -276,7 +276,7 @@ function Terminal({ onClose, hideHeader, transferBuffer, transferState }: Termin
                 "  help            Show available commands",
                 "  clear           Clear terminal",
                 "",
-                `${CYAN}⚠️ DANGER ZONE{RESET}`,
+                `${CYAN}⚠️ DANGER ZONE:${RESET}`,
                 "  sudo su         ⚠ Do NOT run this command",
               ].join("\r\n")
           );
