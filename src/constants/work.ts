@@ -206,7 +206,7 @@ export const work = [
         title: "B.E (Computer Science)",
         desc: "Yenepoya Institute of Technology, 2020 - 2024.",
         infoHeading: "Academic Record",
-        infoArr: ["9 CGPA"],
+        infoArr: ["9.02 CGPA"],
       },
     },
     {
