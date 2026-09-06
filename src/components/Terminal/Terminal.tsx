@@ -266,7 +266,6 @@ function Terminal({ onClose, hideHeader, transferBuffer, transferState }: Termin
                 "",
                 `${CYAN}Fun:${RESET}`,
                 "  neofetch        System info",
-                "  sudo su         Run with superuser privileges",
                 "  matrix          Enter the Matrix",
                 "  cowsay <msg>    ASCII cow says your message",
                 "  fortune         Random programming quote",
@@ -276,7 +275,9 @@ function Terminal({ onClose, hideHeader, transferBuffer, transferState }: Termin
                 `${CYAN}Utility:${RESET}`,
                 "  help            Show available commands",
                 "  clear           Clear terminal",
-                "  history         Show command history",
+                "",
+                `${CYAN}⚠️ DANGER ZONE{RESET}`,
+                "  sudo su         ⚠ Do NOT run this command",
               ].join("\r\n")
           );
           break;
