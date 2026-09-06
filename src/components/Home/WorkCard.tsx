@@ -5,7 +5,7 @@ import {
   useInView,
 } from "motion/react";
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { FiGithub, FiPlayCircle } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiPlayCircle } from "react-icons/fi";
 import useIsMobile from "../../hooks/useIsMobile";
 import { useWindowManagerStore } from "../../store/windowManagerStore";
 import MacButtons from "./MacButtons";
@@ -21,6 +21,7 @@ interface WorkCardInterface {
       url: {
         githubUrl?: string;
         youtubeUrl?: string;
+        externalUrl?: string;
       } | null;
     };
     modalData: {
@@ -157,6 +158,12 @@ const WorkCard = ({ data, cardIndex = 0 }: WorkCardInterface) => {
                 <FiGithub
                   className="icon"
                   onClick={() => window.open(cardData.url?.githubUrl)}
+                />
+              )}
+              {cardData.url.externalUrl && (
+                <FiExternalLink
+                  className="icon"
+                  onClick={() => window.open(cardData.url?.externalUrl)}
                 />
               )}
               {cardData.url.youtubeUrl && (

@@ -12,6 +12,7 @@ interface WorkCardMeta {
     url: {
       githubUrl?: string;
       youtubeUrl?: string;
+      externalUrl?: string;
     } | null;
   };
   modalData: {

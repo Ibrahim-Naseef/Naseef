@@ -14,6 +14,7 @@ import certAwsSa from "../assets/work-tab/certifications/cert-aws-sa.jpg";
 import certAz204 from "../assets/work-tab/certifications/cert-az-204.jpg";
 import certAz900 from "../assets/work-tab/certifications/cert-az-900.jpg";
 import certGithubAgentic from "../assets/work-tab/certifications/cert-github-agentic.jpg";
+import certClaudeCcdvF from "../assets/work-tab/certifications/cert-claude-ccdv-f.jpg";
 
 // Tab 2: Skills — from resume "Technical Skills" section
 import skillAwsServices from "../assets/work-tab/skills-tab/skill-aws-services.jpg";
@@ -108,7 +109,7 @@ export const work = [
       cardData: {
         title: "AWS Certified DevOps Engineer – Professional",
         imgUrl: certAwsDevopsPro,
-        url: null,
+        url: { externalUrl: "https://www.credly.com/badges/bc6d8ad2-2d3e-4123-9696-569fe4443516/public_url" },
       },
       modalData: {
         title: "AWS Certified DevOps Engineer – Professional",
@@ -121,7 +122,7 @@ export const work = [
       cardData: {
         title: "AWS Certified Solutions Architect – Associate",
         imgUrl: certAwsSa,
-        url: null,
+        url: { externalUrl: "https://www.credly.com/badges/4a642a8a-199d-40fe-a54e-07ac3b11bcc8/public_url" },
       },
       modalData: {
         title: "AWS Certified Solutions Architect – Associate",
@@ -135,8 +136,8 @@ export const work = [
         title: "Microsoft Certified: Azure Developer Associate (AZ-204)",
         imgUrl: certAz204,
         url: {
-          githubUrl:
-            "https://learn.microsoft.com/en-in/credentials/certifications/azure-developer/",
+          externalUrl:
+            "https://learn.microsoft.com/api/credentials/share/en-in/IbrahimNaseef-1348/ADE04707684D0396?sharingId=B55D0C9DBD865F5D",
         },
       },
       modalData: {
@@ -150,7 +151,7 @@ export const work = [
       cardData: {
         title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
         imgUrl: certAz900,
-        url: null,
+        url: { externalUrl: "https://REPLACE_WITH_YOUR_AZ900_CREDENTIAL_LINK" },
       },
       modalData: {
         title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
@@ -164,8 +165,8 @@ export const work = [
         title: "GitHub Certified: Agentic AI Developer",
         imgUrl: certGithubAgentic,
         url: {
-          githubUrl:
-            "https://learn.microsoft.com/en-in/credentials/certifications/agentic-ai-developer/",
+          externalUrl:
+            "https://learn.microsoft.com/api/credentials/share/en-in/IbrahimNaseef-1348/F39C53010251E750?sharingId=B55D0C9DBD865F5D",
         },
       },
       modalData: {
@@ -173,6 +174,21 @@ export const work = [
         desc: "Issued by GitHub.",
         infoHeading: "Credential",
         infoArr: ["learn.microsoft.com/credentials/certifications/agentic-ai-developer"],
+      },
+    },
+    {
+      cardData: {
+        title: "Claude Certified Developer – Foundations (CCDV-F)",
+        imgUrl: certClaudeCcdvF,
+        url: {
+          externalUrl: "https://www.credly.com/badges/179e426c-fe24-4ff8-a058-5f0c20b972f2",
+        },
+      },
+      modalData: {
+        title: "Claude Certified Developer – Foundations (CCDV-F)",
+        desc: "Issued by Anthropic.",
+        infoHeading: "Issuer",
+        infoArr: ["Anthropic"],
       },
     },
   ],
