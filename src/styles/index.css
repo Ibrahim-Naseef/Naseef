@@ -2581,14 +2581,6 @@ img {
     grid-column: span 2
 }
 
-.find-my-work .certifications-grid .card-modal-component:nth-child(4) {
-    grid-column: 2 / span 2
-}
-
-.find-my-work .certifications-grid .card-modal-component:nth-child(5) {
-    grid-column: 4 / span 2
-}
-
 .find-my-work .work-content.education-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
