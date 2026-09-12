@@ -142,7 +142,7 @@ function Hero() {
             text="Connect"
             Icon={<FiLink className="icon-link" />}
             iconPosition="right"
-            href="https://www.linkedin.com/in/ibrahim-naseef"
+            href="https://www.linkedin.com/in/nas-eef"
             target="_blank"
             rel="noopener noreferrer"
           />
